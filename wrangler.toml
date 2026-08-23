@@ -2,13 +2,4 @@ name = "rhenish-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
 
-# 保留在 Cloudflare Dashboard 設定的 Variables，
-# 避免透過 GitHub／Wrangler 部署時被取代。
 keep_vars = true
-
-# 只宣告名稱，不會把秘密資料寫進 GitHub。
-# 真實值仍必須在 Cloudflare Dashboard 的 Variables and Secrets 填寫。
-secrets = [
-  "GITHUB_CLIENT_ID",
-  "GITHUB_CLIENT_SECRET"
-]
